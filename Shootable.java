@@ -1,0 +1,3 @@
+interface Shootable {
+    void shoot();
+}
