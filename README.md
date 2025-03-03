@@ -22,7 +22,7 @@ The ValorantGame.java main class simulation **validates OOP principles**, includ
 ---
 ## **Project Structure**
 
-`folder`
+`folder/`
 
 `Agent.java`              # Abstract class for all agents
 
