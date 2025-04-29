@@ -1,7 +1,7 @@
 class DuelistWithGun extends Duelist {
-    private Gun gun;
+    private Shootable gun;
 
-    public DuelistWithGun(String name, Gun gun) {
+    public DuelistWithGun(String name, Shootable gun) {
         super(name);
         this.gun = gun;
     }

@@ -1,4 +1,4 @@
-public class Gun {
+public class Gun implements Shootable {
     private String gunName;
     private int damage;
 
@@ -7,15 +7,17 @@ public class Gun {
         this.damage = damage;
     }
 
-    public int getDamage() {
-        return damage;
-    }
-
     public String getGunName() {
         return gunName;
     }
 
+    @Override
     public void shoot() {
         System.out.println("Firing " + gunName + " dealing " + damage + " damage!");
+    }
+
+    @Override
+    public int getDamage() {
+        return damage;
     }
 }

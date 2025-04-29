@@ -1,8 +1,8 @@
-public class WeaponUpgrade {
-    public void upgradeGun(Gun gun) {
-        System.out.println("Upgrading " + gun.getGunName()); 
-        gun = new Gun(gun.getGunName() + " (Upgraded)", gun.getDamage() + 5);
-
-        System.out.println("New damage: " + gun.getDamage());
+class WeaponUpgrade {
+    public Gun upgradeGun(Gun gun) {
+        Gun upgradedGun = new Gun(gun.getGunName() + " (Upgraded)", gun.getDamage() + 5);
+        System.out.println("Upgrading " + gun.getGunName());
+        System.out.println("New damage: " + upgradedGun.getDamage());
+        return upgradedGun;
     }
 }

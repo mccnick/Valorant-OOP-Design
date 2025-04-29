@@ -1,11 +1,10 @@
-// Sentinel class inherits from Agent
-class Sentinel extends Agent {
+public class Sentinel extends Agent {
     public Sentinel(String name) {
         super(name);
     }
 
     @Override
     void useAbility() {
-        System.out.println(name + " deploys a turret for defense!");
+        System.out.println(getName() + " deploys a turret for defense!");
     }
 }
